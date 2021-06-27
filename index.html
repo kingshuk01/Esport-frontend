@@ -5,26 +5,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Books</title>
+  <title>E-maniac</title>
+  <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./Style.css" />
   <link rel="stylesheet" href="./mobile-style.css">
 </head>
 
 <body>
-
-
-
-
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
   <header>
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
-          <i class="fas fa-gamepad fa-2x mx-3"></i>Esportz</a>
+          <i class="fas fa-gamepad fa-2x mx-3"></i>E MANIAC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
           <i class="fas fa-align-right text-light"></i>
@@ -33,12 +51,12 @@
           <div class="mr-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">HOME
+              <a class="nav-link" href="index.html">HOME
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#carouselExampleIndicators">TOURNAMENTS</a>
+              <a class="nav-link" href="index.html#sec-2">TOURNAMENTS</a>
             </li>
             
             <li class="nav-item dropdown">
@@ -56,7 +74,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#sec-4">STREAM</a>
+              <a class="nav-link" href="index.html#sec-4">STREAM</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#foot">ABOUT</a>
@@ -68,77 +86,105 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-md-7 col-sm-12  text-white">
-          <h6>E-Sparta</h6>
+          <h6>E-MANIAC</h6>
           <h1>All you need to know about gaming</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus eum dignissimos ipsa sequi expedita.
+            Who better to know about gaming than professional gamers themselves.
           </p>
-          <button class="btn btn-light px-5 py-2 primary-btn">
+          <a href="#sec-2"><button  class="btn btn-light px-5 py-2 primary-btn">
             dive deep
-          </button>
+          </button></a>
         </div>
         <div class="col-md-5 col-sm-12  h-25">
-          <img src="mainpic2.png" alt="Book" />
+          <img id = "main-img" src="mainpic2.png" alt="Book" />
         </div>
       </div>
     </div>
   </header>
   <main>
     
-    
-
-
-    <div class="tourwrap">
-    <div class="container" id="tour">
-    <section class="section-2 container-fluid p-0 text-center" >
-      <h2 id="tour-head">Upcoming Tournaments</h2>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="slide1.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="slide2.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="slide3.jpg" alt="Third slide">
-        </div>
+    <section class="section-2 " id="sec-2">
+        <br><br>
+      
+        
+        <center>
+          <i class="fas fa-trophy fa-2x mx-3"></i>
+        <h1 style="display: inline;" class="text-dark-center">Upcoming Tournaments</h1></center>
+      <br><br>
+      <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100 rcorners1" src="slide1.jpg"
+          alt="First slide">
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Gamathon</h3>
+        <p>Razor</p>
+      </div>
     </div>
-  </section>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100 rcorners1" src="slide2.jpg"
+          alt="Second slide">
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Chicken Dinner</h3>
+        <p>ROG</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100 rcorners1" src="slide3.jpg"
+          alt="Third slide">
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Iceand masters</h3>
+        <p>Riot Games</p>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+</div>
+<br>
+<br>
+<!--/.Carousel Wrapper-->
+</section>
 </div>
 
-
-
-
-
-
-
-
-
     <!-- Section 4 -->
-    
     <section class="section-4" >
       <div class="container text-center" id="sec-4">
-        <h2 class="text-light">Catch the top streamers right now</h>
-        <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+        <center>
+        <br><br>
+        <h2 class="text-light"  style="display: inline;"> Catch the top streamers right now</h2>
+          <i class="fas fa-video fa-2x mx-3"></i></center>
       </div>
       <div class="team row ">
         <div class="card text-white bg-dark mb-3" style="width: 18rem;">
-          <video src="https://codingyaar.com/wp-content/uploads/video-in-bootstrap-card.mp4"></video>
+          <img src="pic1.jpg"></img>
           <div class="card-body">
             <h5 class="card-title">Sinatra</h5>
             <p class="card-text">playing valorant</p>
@@ -146,23 +192,23 @@
           </div>
         </div>
         <div class="card text-white bg-dark mb-3" style="width: 18rem;">
-          <video src="https://codingyaar.com/wp-content/uploads/video-in-bootstrap-card.mp4"></video>
+          <img src="pic2.jpg_large"></img>
           <div class="card-body">
-            <h5 class="card-title">Sinatra</h5>
-            <p class="card-text">playing valorant</p>
-            <a href="#" class="btn btn-primary">Twitch</a>
-          </div>
-        </div>
-        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
-          <video src="https://codingyaar.com/wp-content/uploads/video-in-bootstrap-card.mp4"></video>
-          <div class="card-body">
-            <h5 class="card-title">Boaster</h5>
+            <h5 class="card-title">Shroud</h5>
             <p class="card-text">playing CS:GO</p>
             <a href="#" class="btn btn-primary">Twitch</a>
           </div>
         </div>
         <div class="card text-white bg-dark mb-3" style="width: 18rem;">
-          <video src="https://youtu.be/qZNY3-16-X8"></video>
+          <img src="pic3.jfif"></img>
+          <div class="card-body">
+            <h5 class="card-title">Boaster</h5>
+            <p class="card-text">playing Valorant</p>
+            <a href="#" class="btn btn-primary">Twitch</a>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+          <img src="pic4.jpg"></img>
           <div class="card-body">
             <h5 class="card-title">Mortal</h5>
             <p class="card-text">playing BGMI</p>
@@ -173,42 +219,43 @@
         
       </div>
     </section>
- 
+  </div>
 
     <section class="section-3 container-fluid p-0 text-center">
       <div class="row">
         <div class="col-md-12 col-sm-12">
           <h1>Download Our App for all Platform</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem alias perspiciatis omnis quod possimus odit
-            voluptatum! Sunt ea quasi praesentium, tenetur doloribus animi obcaecati, sint nemo quae laudantium iusto unde
-            eaque nostrum nobis voluptatum
+            To get all the gaming updates regarding the upcoming Tournaments to every live stream download the app.EManiacis a form of competition using video games. Esports often takes the form of organized, multiplayer video game competitions, particularly between professional players, individually or as teams.
           </p>
         </div>
       </div>
       <div class="platform row">
         <div class="col-md-6 col-sm-12 text-right">
           <div class="desktop shadow-lg">
-            <div class="d-flex flex-row justify-content-center">
+          <a href="#"><div class="d-flex flex-row justify-content-center">
               <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
               <div class="text text-left">
                 <h3 class="pt-1 m-0">Desktop</h3>
-                <p class="p-0 m-0">On website</p>
+                <p class="p-0 m-0">On website</p></a>
               </div>
             </div>
           </div>
         </div>
+        
         <div class="col-md-6 col-sm-12 text-left">
           <div class="desktop shadow-lg">
-            <div class="d-flex flex-row justify-content-center">
+           <a href="#"> <div class="d-flex flex-row justify-content-center">
               <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
               <div class="text text-left">
                 <h3 class="pt-1 m-0">On Mobile</h3>
-                <p class="p-0 m-0">On Play Store</p>
+                <p class="p-0 m-0">On Play Store</p></a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      
       </div>
     </section>
 
@@ -218,7 +265,7 @@
       <div class="row text-left">
         <div class="col-md-5 col-sm-5">
           <h4 class="text-light">About us</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum maxime ea similique illum corrupti</p>
+          <p class="text-muted">This is a Gaming website frontend developed by Kingshuk Simrat and Sathvika on HTML, CSS and vanila javascript </p>
          
           </p>
         </div>
@@ -252,12 +299,6 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="./main.js"></script>
 </body>
 
 </html>

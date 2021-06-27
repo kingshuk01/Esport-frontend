@@ -1,3 +1,4 @@
+
 let nCount = selector => {
   $(selector).each(function () {
     $(this)
@@ -32,6 +33,7 @@ $(window).scroll(function () {
 
 
 
+
 /**
  *
  *  sticky navigation
@@ -49,3 +51,5 @@ $(window).scroll(function () {
     navbar.removeClass("sticky");
   }
 });
+
+$('.carousel-3d-controls').mdbCarousel3d();
